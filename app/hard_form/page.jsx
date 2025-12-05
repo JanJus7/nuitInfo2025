@@ -1,9 +1,9 @@
-import Hard_Form from '../components/Hard_Form';
+import Animation from "../components/Animation";
 
 export default function HardFormPage() {
     return (
         <main>
-            <Hard_Form />
+            <Animation />
         </main>
     );
 }
