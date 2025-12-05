@@ -27,7 +27,7 @@ export default function Hero({ onQuizClick } = {}) {
           }}
           className="bg-transparent border border-yellow-400 text-yellow-200 px-4 py-2 rounded hover:bg-yellow-500/20"
         >
-          Essayer le Mini-Quiz
+          Essayer le Mini-Quiz.
         </button>
       </div>
     </section>
