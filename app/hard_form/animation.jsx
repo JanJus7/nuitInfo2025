@@ -253,14 +253,16 @@ export default function Animation() {
             <style>{`
                     body {
                         font-family: 'Geist', 'Montserrat', Arial, sans-serif;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
                         height: 100vh;
                         margin: 0;
                         background: linear-gradient(135deg, #e0e7ff 0%, #f0fdfa 100%);
                         color: #222;
                         overflow: hidden;
+                    }
+
+                    /* Cacher le header sur cette page spécifique */
+                    header {
+                        display: none !important;
                     }
 
                     .container {
