@@ -48,9 +48,7 @@ export default function VillageGrid({ buildings = defaultBuildings, onOpenQuiz }
           <div
             key={b.id}
             onClick={() => openSection(b.id)}
-            className="bg-indigo-800 hover:bg-indigo-700 border border-transparent hover:border-yellow-400 
-                       transition p-6 rounded-xl cursor-pointer text-center shadow-xl hover:scale-105 
-                       duration-200 ease-out"
+            className="bg-indigo-800 hover:bg-indigo-700 border border-transparent hover:border-yellow-400 transition p-6 rounded-xl cursor-pointer text-center shadow-xl hover:scale-105 duration-200 ease-out"
           >
             <div className="text-5xl drop-shadow">{b.emoji}</div>
             <h3 className="mt-3 text-xl font-bold text-yellow-200">{b.title}</h3>
