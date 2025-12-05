@@ -15,7 +15,6 @@ export default function Navbar() {
 
         <div className="flex items-center gap-4">
           <Link href="/ressources" className="text-yellow-100 hover:text-yellow-300">Ressources</Link>
-          <Link href="/snake" className="text-yellow-100 hover:text-yellow-300">Snake</Link>
           <a href="https://nird.forge.apps.education.fr/" target="_blank" rel="noreferrer" className="text-yellow-100 hover:text-yellow-300">NIRD</a>
         </div>
       </nav>

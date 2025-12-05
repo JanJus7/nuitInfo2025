@@ -206,24 +206,36 @@ export default function Snake() {
             // shouldn't let you collide with your own body)
 
             // left arrow key
-            if ((e.which === 37 || e.key === 'ArrowLeft') && snake.dx === 0) {
-                snake.dx = -grid;
-                snake.dy = 0;
+            if ((e.which === 37 || e.key === 'ArrowLeft')) {
+                e.preventDefault();
+                if (snake.dx === 0) {
+                    snake.dx = -grid;
+                    snake.dy = 0;
+                }
             }
             // up arrow key
-            else if ((e.which === 38 || e.key === 'ArrowUp') && snake.dy === 0) {
-                snake.dy = -grid;
-                snake.dx = 0;
+            else if ((e.which === 38 || e.key === 'ArrowUp')) {
+                e.preventDefault();
+                if (snake.dy === 0) {
+                    snake.dy = -grid;
+                    snake.dx = 0;
+                }
             }
             // right arrow key
-            else if ((e.which === 39 || e.key === 'ArrowRight') && snake.dx === 0) {
-                snake.dx = grid;
-                snake.dy = 0;
+            else if ((e.which === 39 || e.key === 'ArrowRight')) {
+                e.preventDefault();
+                if (snake.dx === 0) {
+                    snake.dx = grid;
+                    snake.dy = 0;
+                }
             }
             // down arrow key
-            else if ((e.which === 40 || e.key === 'ArrowDown') && snake.dy === 0) {
-                snake.dy = grid;
-                snake.dx = 0;
+            else if ((e.which === 40 || e.key === 'ArrowDown')) {
+                e.preventDefault();
+                if (snake.dy === 0) {
+                    snake.dy = grid;
+                    snake.dx = 0;
+                }
             }
         }
 
