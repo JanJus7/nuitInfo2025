@@ -97,10 +97,6 @@ export default function Resources() {
             <li>• Favoriser l’hébergement France / UE pour les données.</li>
           </ul>
 
-          <p className="mt-3 text-sm opacity-90 text-yellow-200">
-            Si vous souhaitez un guide d’installation Linux, un tutoriel de réemploi de PC,
-            ou une page de contribution (pull requests), je peux les générer.
-          </p>
         </section>
 
       </main>
