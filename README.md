@@ -34,6 +34,7 @@ Features principales :
 
 7. **ChatBot**
     -   Un petit bouton en bas à droite sur la page d'accueil permet de chatter avec un chatbot assez stupide.....
+    -   https://github.com/JanJus7/nuit-info-chatbruti (lien pour repertoire chatbot)
 
 8.  **Design & Accessibilité :**
     -   Interface sombre (Dark Mode) pour l'économie d'énergie.
