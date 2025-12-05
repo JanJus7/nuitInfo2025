@@ -32,7 +32,7 @@ Features principales :
     -   Lorsque vous cliquez sur les lettres de votre clavier, les lettres rebondissent.
     Lien : https://nuit-info2025-delta.vercel.app/bouncy_keys
 
-7. **ChatBot(Non-fonctionnel)**
+7. **ChatBot**
     -   Un petit bouton en bas à droite sur la page d'accueil permet de chatter avec un chatbot assez stupide.....
 
 8.  **Design & Accessibilité :**
