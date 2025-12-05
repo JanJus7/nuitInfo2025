@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Challenge() {
   const STORAGE_KEY = "nird_challenge_state_v1";
