@@ -7,7 +7,7 @@ const defaultBuildings = [
   { id: "logiciels", title: "Logiciels libres", emoji: "📚" },
   { id: "sobriete", title: "Sobriété numérique", emoji: "♻️" },
   { id: "acteurs", title: "Acteurs du NIRD", emoji: "🏛️" },
-  { id: "quiz", title: "Mini-Quiz", emoji: "❓" },
+  
 ];
 
 export default function VillageGrid({ buildings = defaultBuildings, onOpenQuiz } = {}) {
@@ -75,21 +75,7 @@ export default function VillageGrid({ buildings = defaultBuildings, onOpenQuiz }
             {popup === "sobriete" && <p>Moins consommer, mieux utiliser.</p>}
             {popup === "acteurs" && <p>Une résistance collective !</p>}
 
-            {popup === "quiz" && (
-              <>
-                <p className="mt-4 mb-2">Un PC trop vieux doit-il être jeté ?</p>
-                <button onClick={() => earnBadge("badge1")}
-                        className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded mr-2 shadow-md">
-                  Non ✔️
-                </button>
-
-                <p className="mt-6 mb-2">Les logiciels libres sont…</p>
-                <button onClick={() => earnBadge("badge2")}
-                        className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded shadow-md">
-                  Gratuits et modifiables
-                </button>
-              </>
-            )}
+            
 
             {/* Close */}
             <button
