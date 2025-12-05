@@ -18,11 +18,11 @@ export default function ChatWidget() {
 
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL || "https://nuit-info-chatbruti.onrender.com"}/generate`,
+        "https://JanJus-chatbruti-api.hf.space/generate",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ prompt }),
+          body: JSON.stringify({ prompt: userMsg.text }),
         }
       );
 
@@ -30,14 +30,14 @@ export default function ChatWidget() {
 
       const botMsg = {
         role: "bot",
-        text: data.response || "Brak odpowiedzi",
+        text: data.response || "Aucune réponse",
       };
 
       setMessages((prev) => [...prev, botMsg]);
     } catch (err) {
       setMessages((prev) => [
         ...prev,
-        { role: "bot", text: "❌ Błąd serwera" },
+        { role: "bot", text: "❌ Erreur du serveur" },
       ]);
     } finally {
       setLoading(false);
@@ -48,13 +48,13 @@ export default function ChatWidget() {
     <>
       <button
         onClick={() => setOpen(!open)}
-        className="fixed bottom-6 right-6 z-9999 w-14 h-14 rounded-full bg-black text-white text-2xl flex items-center justify-center shadow-xl hover:scale-105 transition"
+        className="fixed bottom-6 right-6 z-[9999] w-14 h-14 rounded-full bg-black text-white text-2xl flex items-center justify-center shadow-xl hover:scale-105 transition"
       >
         💬
       </button>
 
       {open && (
-        <div className="fixed bottom-24 right-6 z-9999 w-80 h-28rem bg-zinc-900 rounded-xl shadow-2xl flex flex-col overflow-hidden border border-zinc-700">
+        <div className="fixed bottom-24 right-6 z-[9999] w-80 h-[28rem] bg-zinc-900 rounded-xl shadow-2xl flex flex-col overflow-hidden border border-zinc-700">
           <div className="bg-black text-white text-center py-2 font-semibold">
             Chat Bruti 🤖
           </div>
@@ -74,7 +74,9 @@ export default function ChatWidget() {
             ))}
 
             {loading && (
-              <div className="text-xs text-zinc-400">Bot pisze...</div>
+              <div className="text-xs text-zinc-400">
+                Le bot est en train d’écrire...
+              </div>
             )}
           </div>
 
@@ -83,7 +85,7 @@ export default function ChatWidget() {
               value={prompt}
               onChange={(e) => setPrompt(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && sendMessage()}
-              placeholder="Napisz coś..."
+              placeholder="Écris ton message..."
               className="flex-1 px-3 py-2 rounded-md bg-zinc-800 text-white outline-none text-sm"
             />
             <button
