@@ -10,10 +10,10 @@ export default function Header() {
     <AppBar position="static" color="primary" enableColorOnDark>
       <Toolbar className="flex items-center px-6 w-full">
 
-        {/* LEFT */}
+       
         <AdbIcon />
+        
 
-        {/* RIGHT */}
         <div className="flex gap-6 ml-auto">
           <Link href="/" className="no-underline text-white">
             <Typography variant="h6">Home</Typography>

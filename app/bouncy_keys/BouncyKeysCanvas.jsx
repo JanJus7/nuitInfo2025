@@ -66,13 +66,13 @@ export default function BouncyKeysCanvas() {
       const H = canvas.height;
       t += 0.01;
 
-      // FADE BACKGROUND WITHOUT GRAYING COLORS
+     
       ctx.globalCompositeOperation = "destination-out";
       ctx.fillStyle = "rgba(0,0,0,0.03)";
       ctx.fillRect(0, 0, W, H);
       ctx.globalCompositeOperation = "source-over";
 
-      // COLORED HAZE
+  
       ctx.fillStyle = `hsla(${(t * 30) % 360}, 80%, 50%, 0.03)`;
       ctx.fillRect(0, 0, W, H);
 
@@ -116,7 +116,7 @@ export default function BouncyKeysCanvas() {
         ctx.restore();
       }
 
-      // REMOVE AFTER 15 SECONDS
+     
       const now = performance.now();
       particlesRef.current = arr.filter(
         (p) => now - p.created < 15000 // 15 seconds
