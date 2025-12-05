@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+URL du site : https://nuit-info2025-delta.vercel.app/
+Lien des sources téléchargeables : https://github.com/JanJus7/nuitInfo2025
 
-## Getting Started
+Description du site :
 
-First, run the development server:
+Le site "Village Numérique Résistant" a été conçu pour la Nuit de l'Info 2025. Il a pour but de sensibiliser à la démarche NIRD (Numérique Inclusif, Responsable et Durable) de manière ludique et interactive. L'objectif est de montrer comment réduire la dépendance aux géants du numérique (Big Tech), prolonger la durée de vie du matériel et adopter des logiciels libres.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Features principales :
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1.  **Village Interactif (Page d'accueil) :**
+    -   Une grille interactive représentant un village où chaque "bâtiment" correspond à un concept clé (Linux, Réemploi, Logiciels Libres, Sobriété, Acteurs).
+    -   Des popups informatifs s'ouvrent au clic pour expliquer chaque concept.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2.  **Mini-Quiz Gamifié (Challenge) :**
+    -   Un quiz intégré pour tester ses connaissances sur le numérique responsable.
+    -   Système de progression avec sauvegarde locale (localStorage) et obtention de badges virtuels.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3.  **Ressources Éducatives :**
+    -   Une page dédiée regroupant des liens vers des outils libres (Framalibre), des guides (déploiement, installation de Linux), et des médias (vidéos, podcasts) sur l'obsolescence programmée.
 
-## Learn More
+4.  **Hard Form (Expérience Utilisateur Frustrante) :**
+    -   Une page "Hard Form" illustrant de manière humoristique les mauvaises pratiques ou la difficulté de certaines tâches numériques.
+    -   Les champs de saisie fuient la souris et mélangent les caractères saisis.
+    Lien : https://nuit-info2025-delta.vercel.app/hard_form
 
-To learn more about Next.js, take a look at the following resources:
+5.  **Jeu Caché (Easter Egg) :**
+    -   Un jeu "Snake" est caché dans le site.
+    -   Il est accessible en tapant le **Konami Code** (`↑ ↑ ↓ ↓ ← → ← → B A`) sur n'importe quelle page.
+    -   Le jeu propose différents modes de taille et une "Pomme d'Or" bonus.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+6.  **Visualiseur :**
+    -   Lorsque vous cliquez sur les lettres de votre clavier, les lettres rebondissent.
+    Lien : https://nuit-info2025-delta.vercel.app/bouncy_keys
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+7. **ChatBot(Non-fonctionnel)**
+    -   Un petit bouton en bas à droite sur la page d'accueil permet de chatter avec un chatbot assez stupide.....
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+8.  **Design & Accessibilité :**
+    -   Interface sombre (Dark Mode) pour l'économie d'énergie.
+    -   Utilisation de Next.js et Tailwind CSS pour un site performant et réactif.
