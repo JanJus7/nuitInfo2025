@@ -41,6 +41,12 @@ export default function Snake() {
         const grid = 16;
         const gridCount = canvasSize / grid;
         let animationId;
+        // Détection navigateur pour ajuster la vitesse
+        let slowdown = 4;
+        const ua = navigator.userAgent;
+        if (/Chrome|Chromium|Edg|OPR|Brave|Firefox/i.test(ua)) {
+            slowdown = 14;
+        }
 
         // Initialize snake and apple only once, or if canvas size changed significantly
         if (!gameStateRef.current.snake || gameStateRef.current.canvasSize !== canvasSize) {
@@ -83,8 +89,8 @@ export default function Snake() {
         function loop() {
             animationId = requestAnimationFrame(loop);
 
-            // slow game loop to 15 fps instead of 60 (60/15 = 4)
-            if (++count < 4) {
+            // ralentir la boucle selon le navigateur
+            if (++count < slowdown) {
                 return;
             }
 
